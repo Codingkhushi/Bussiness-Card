@@ -8,7 +8,7 @@ const createCard = zod.object({
         Twitter : zod.string().url(),
         Github : zod.string().url()
     }),
-    Interests : zod.string(),
+    Interest : zod.string(),
     //id : zod.string()
 })
 

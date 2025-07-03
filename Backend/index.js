@@ -4,8 +4,10 @@ const { createCard } = require("./type");
 const PORT = 3000;
 const { Cards } = require("./db")
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/cards',async function(req,res){
     const allCards = await Cards.find({});
